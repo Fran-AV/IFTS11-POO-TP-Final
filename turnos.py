@@ -137,6 +137,23 @@ class Turnos(object):
             
             vector=[id_cl, str_date, str_time]
             values=",".join(str(value) for value in (vector)) + "\n"
+            
+            """
+            gf=DB(filename)
+            k=gf.read()
+            turnos=set()
+        
+            for diccionario in k:
+                str(diccionario)
+                turnos.add(diccionario)
+                
+            if values not in turnos:
+                file.writelines([values])
+                turnos.add(values)
+            else:
+                print("Este horario ya está ocupado.")
+            """ 
+            
             file.writelines([values])
             id_cl=input("Ingrese OTRO ID de cliente (o deje el campo para finalizar): ")
             
