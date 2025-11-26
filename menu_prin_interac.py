@@ -1,5 +1,10 @@
 #MENÚ PRINCIPAL INTERACTIVO
 
+from clientes import menu_clientes
+from turnos import menu_turnos
+from listar_turnos import listar_turnos
+from modificador_turnos import menu_cambio
+
 def menu_principal():
     while True:
         try:
@@ -8,21 +13,18 @@ def menu_principal():
             print("[2] Solicitar turno\n")
             print("[3] Listar turnos existentes\n")
             print("[4] Modificar o cancelar turno\n")
-            print("[5] Guardar datos en CSV / Cargar desde Dict\n")
             print("[0] Salir\n")
 
             opcion=int(input("Elija una opción: "))
 
             if opcion==1:
-                print("1")
+                menu_clientes()
             elif opcion==2:
-                print("2")
+                menu_turnos()
             elif opcion==3:
-                print("3")
+                listar_turnos()
             elif opcion==4:
-                print("4")
-            elif opcion==5:
-                print("5")
+                menu_cambio()
             elif opcion==0:
                 break
             else:
