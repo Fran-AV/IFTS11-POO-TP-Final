@@ -89,6 +89,7 @@ def modificar_turno(id_cl):
             break
         i+=1
     
+    print("Nombre su nuevo registro de turnos OCUPADOS y, luego, su nuevo registro de turnos LIBRES.")
     return dict2csv(b), dict2csv(y)
 
 ###########################################################################################
@@ -134,6 +135,7 @@ def borrar_turno(id_cl):
     m={"date":date, "time":time}
     y.append(m)
     
+    print("Nombre su nuevo registro de turnos OCUPADOS y, luego, su nuevo registro de turnos LIBRES.")
     return dict2csv(b), dict2csv(y)
 
 ###########################################################################################
