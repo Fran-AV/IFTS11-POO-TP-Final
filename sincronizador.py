@@ -22,4 +22,4 @@ def sincronizar(slots, turnos):
                     o.writerow(line)
 
 if __name__=="__main__":
-    sincronizar("espacios_libres_PRB.csv", "")
+    sincronizar("espacios_libres.csv", "")
