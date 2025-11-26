@@ -1,5 +1,7 @@
 import datetime
 from sincronizador import sincronizar
+from transformador import DB
+from transformador import dict2csv
 
 class Turnos(object):
     def __init__(self, id_cl, date, time):
